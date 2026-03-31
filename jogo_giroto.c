@@ -11,7 +11,7 @@ int decisao, x;
 int Resposta;
 
 void menu(){
-	printf("========TÕTULO DO JOGO========\n");
+	printf("========T√çTULO DO JOGO========\n");
 	
 	printf("-----1: Perguntas e Respostas!\n");
 	printf("-----2: Cobra na Caixa!\n");
@@ -43,14 +43,14 @@ int main()
 			scanf("%i", &Resposta);
 			
 			if(Resposta == 4){
-				printf("Resposta correta! Sua sabedoria È invej·vel, jogador.\n");
+				printf("Resposta correta! Sua sabedoria √© invej√°vel, jogador.\n");
 			}else{
-				printf("Resposta errada! Esperava mais de vocÍ, jogador . . . A alternativa a correta era a n˙mero 4. \n");
+				printf("Resposta errada! Esperava mais de voc√™, jogador . . . A alternativa a correta era a n√∫mero 4. \n");
 			}
 		
 		// pergunta 2
 		
-			printf("PrÛxima pergunta! Quantas teclas tem um piano padr„o moderno?\n");
+			printf("Pr√≥xima pergunta! Quantas teclas tem um piano padr√£o moderno?\n");
 			printf("1: 76 teclas\n");
 			printf("2: 88 teclas\n");
 			printf("3: 76 teclas\n");
@@ -61,12 +61,12 @@ int main()
 			if(Resposta == 2){
 				printf("Resposta correta! Continue assim.\n");
 			}else{
-				printf("Resposta errada! H· de melhorar, jogador . . . A alternativa correta era a n˙mero 2.\n");
+				printf("Resposta errada! H√° de melhorar, jogador . . . A alternativa correta era a n√∫mero 2.\n");
 			}
 		
 		
 		//pergunta 3
-			  		printf("Agora essa: Quantos elementos tem na tabela periÛdica?\n");
+			  		printf("Agora essa: Quantos elementos tem na tabela peri√≥dica?\n");
 			printf("1: 118 elementos\n");
 			printf("2: 129 elementos\n");
 			printf("3: 201 elementos\n");
@@ -75,13 +75,13 @@ int main()
 			scanf("%i", &Resposta); 
 			
 			if(Resposta == 1){
-				printf("Resposta correta! VocÍ est· sempre melhorando.\n");
+				printf("Resposta correta! Voc√™ est√° sempre melhorando.\n");
 			}else{
-				printf("Resposta errada! Vai se sair melhor na prÛxima. A alternativa a correta era a n˙mero 1. \n");
+				printf("Resposta errada! Vai se sair melhor na pr√≥xima. A alternativa a correta era a n√∫mero 1. \n");
 			}
 		
 		// pergunta 4
-			printf("PrÛxima! Quem È considerado o pai da CiÍncia da ComputaÁ„o moderna?\n");
+			printf("Pr√≥xima! Quem √© considerado o pai da Ci√™ncia da Computa√ß√£o moderna?\n");
 			printf("1: Charles Babbage\n");
 			printf("2: Alan Turing\n");
 		   	printf("3: Nikola Tesla\n");
@@ -90,34 +90,34 @@ int main()
 		   	scanf("%i", &Resposta); 
 		   	
 			if(Resposta == 2){
-				printf("Resposta correta! Essa foi f·cil, mesmo.\n");
+				printf("Resposta correta! Essa foi f√°cil, mesmo.\n");
 			}else{
-				printf("Resposta errada! Minha avÛ fez essa pensando que era bingo e acertou. A alternativa a correta era a n˙mero 2. \n");
+				printf("Resposta errada! Minha av√≥ fez essa pensando que era bingo e acertou. A alternativa a correta era a n√∫mero 2. \n");
 			}
 		
 		// pergunta 5 (e ultima gracas a deus)
-			printf("Por fim. . . Qual foi o primeiro paÌs a mandar uma pessoa ao espaÁo, qual o nome do astronauta e o que ele disse quando viu a terra?\n");
-			printf("1: Uni„o SoviÈtica, Valentina Tereshkova, 'Sou eu, Gaivota! Tudo est· bem'\n");
-			printf("2: Estados Unidos, Timbaland, 'I¥m a real producer and you just the piano man'\n");
-		   	printf("3: Uni„o soviÈtica, Yuri Gagarin, 'A Terra È azul'\n");
-		   	printf("4: China, Xi Jingping, 'A Terra È plana'\n");
+			printf("Por fim. . . Qual foi o primeiro pa√≠s a mandar uma pessoa ao espa√ßo, qual o nome do astronauta e o que ele disse quando viu a terra?\n");
+			printf("1: Uni√£o Sovi√©tica, Valentina Tereshkova, 'Sou eu, Gaivota! Tudo est√° bem'\n");
+			printf("2: Estados Unidos, Timbaland, 'I¬¥m a real producer and you just the piano man'\n");
+		   	printf("3: Uni√£o sovi√©tica, Yuri Gagarin, 'A Terra √© azul'\n");
+		   	printf("4: China, Xi Jingping, 'A Terra √© plana'\n");
 		   	
 		   	scanf("%i", &Resposta); 
 		   	
 			if(Resposta == 3){
 				printf("Resposta correta! Que bom que acertou.\n");
 			}else{
-				printf("Resposta errada! A alternativa correta era a n˙mero 3. Tente jogar novamente.\n");
+				printf("Resposta errada! A alternativa correta era a n√∫mero 3. Tente jogar novamente.\n");
 			}
 		
 		printf("Jogar novamente?\n");
 		printf("1: Sim!\n");
-		printf("2: N„o!\n");
+		printf("2: N√£o!\n");
 		
 		scanf("%i", &Resposta); 
 		   	
 			if(Resposta == 1){
-				printf("RecomeÁando . . .\n");
+				printf("Recome√ßando . . .\n");
 			}else{
 				printf("Fechando jogo . . . \n");
 				decisao = 5;
@@ -129,7 +129,7 @@ int main()
 		else if (decisao == 2){
 			printf("Entrando no jogo cobra na caixa! . . .\n");
 			char nomes[NOMES][20] = {
-    "Isis", "Merit", "An˙bis", "Bastet", "OsÌris", "Nefertiti", "RamsÈs"
+    "Isis", "Merit", "An√∫bis", "Bastet", "Os√≠ris", "Nefertiti", "Rams√©s"
 };
 
 		void limparBuffer() {
@@ -140,9 +140,9 @@ int main()
     	int valor;
     	while (scanf("%d", &valor) != 1)
 		 if(valor == 0){
-        printf("MAU USU¡RIO! Digite um numero de 1 a 7:\n");
+        printf("MAU USU√ÅRIO! Digite um numero de 1 a 7:\n");
     }if(valor > 7){
-		printf("MAU USU¡RIO! Digite um numero de 1 a 7:\n");
+		printf("MAU USU√ÅRIO! Digite um numero de 1 a 7:\n");
 	}
    	    return valor;
 }
@@ -175,11 +175,24 @@ int main()
             printf("%d - %s\n", i + 1, nomes[i]);
         }
     }
+    escolha2 = lerInteiro();
+    strcpy(jogador1, nomes[escolha1 - 1]);
+	strcpy(jogador2, nomes[escolha2 - 1]);
+    while (strcmp(jogador1, jogador2)==0){ //comparar char
+		printf("\nEscolha o nome v√°lido do Jogador 2:\n");
+		for (i = 0; i < NOMES; i++) {
+			if (i != escolha1 - 1) {
+				printf("%d - %s\n", i + 1, nomes[i]);
+			}
+			
+		}
+		escolha2 = lerInteiro();//ler
+		strcpy(jogador2, nomes[escolha2 - 1]);//armazena
+		
+	}
+	
 
-    		escolha2 = lerInteiro();
-
-    		strcpy(jogador1, nomes[escolha1 - 1]);
-    		strcpy(jogador2, nomes[escolha2 - 1]);
+    		
 
     	botao = rand() % CAIXAS;
 
@@ -222,9 +235,9 @@ int main()
 
         		if (escolha == botao) {
 	 	 	    if (jogadorAtual == 0)
-                printf("\n>>> VOC  ACHOU O BOT√O! %s venceu!\n", jogador1);
+                printf("\n>>> VOC√ä ACHOU O BOT√ÉO! %s venceu!\n", jogador1);
             	else
-                printf("\n>>> VOC  ACHOU O BOT√O! %s venceu!\n", jogador2);
+                printf("\n>>> VOC√ä ACHOU O BOT√ÉO! %s venceu!\n", jogador2);
             break;
         }
 
@@ -252,13 +265,13 @@ int main()
 		else if (decisao == 3){
 			
 			
-			//funÁıes:
+			//fun√ß√µes:
 			int furia1 = 1, furia2 = 1, furia3 = 1, furia4 = 1;
 			void placar (int furia1, int furia3, int furia2, int furia4){
 				printf("  PLACAR\n");
 				printf("%i\t%i\n%i\t%i\n", furia1, furia3, furia2, furia4);
 			}
-			// sÛ pra mostrar placar
+			// s√≥ pra mostrar placar
 			void atacar(int *alvo, int ataque){
 				*alvo=*alvo+ataque;
 			}
@@ -286,7 +299,7 @@ int main()
 				*gousmas2=calculo;
 				
 			}
-			//divis„o das gousmas
+			//divis√£o das gousmas
 			void turno(int jogador){
 				printf("Jogador %i\n", jogador);
 				printf("6 ou mais, gousma morta\n");
@@ -300,9 +313,9 @@ int main()
 			}
 			
 			printf("Entrando no jogo gousmas war! . . .\n");
-			printf("Como funciona:\nCada jogador possui 2 criaturas, as gousmas, cada uma no nivel 1 de f˙ria\n");
-			printf("Cada ataque, a criatura transmite uma f˙ria para a outra, atÈ morrer (quando alcanÁar nÌvel 5). ");
-			printf("O jogador tem a opÁ„o de dividir f˙ria com a outra prÛpria gousma. ");
+			printf("Como funciona:\nCada jogador possui 2 criaturas, as gousmas, cada uma no nivel 1 de f√∫ria\n");
+			printf("Cada ataque, a criatura transmite uma f√∫ria para a outra, at√© morrer (quando alcan√ßar n√≠vel 5). ");
+			printf("O jogador tem a op√ß√£o de dividir f√∫ria com a outra pr√≥pria gousma. ");
 			printf("O primeiro a passar do nivel 5 nas duas gousmas, perde\n\n");
 			// apenas falando sobre o jogo
 			while ((furia1 < 6 || furia2 < 6) && (furia3 < 6 || furia4 < 6)){ 
@@ -328,7 +341,7 @@ int main()
 							printf("tente de novo");
 							scanf("%i", &decisao);
 						}
-						//aÁ„o de atacar, podendo escolher qual das duas gousmas ataca
+						//a√ß√£o de atacar, podendo escolher qual das duas gousmas ataca
 				}
 				else if (decisao==2 && furia4<6){
 					printf("usar gousmas de cima(1), com %i de furia, ou gousmas de baixo(2), com %i de furia?", furia1, furia2);
@@ -345,13 +358,13 @@ int main()
 							printf("tente de novo");
 							scanf("%i", &decisao);
 						}
-						//aÁ„o de atacar, podendo escolher qual das duas gousmas ataca
+						//a√ß√£o de atacar, podendo escolher qual das duas gousmas ataca
 				}
 				else if (decisao==3){
 					furia1=6;
 					furia2=6;
 					printf("JOGADOR2-> VENCEDOR");
-					//DESIST NCIA
+					//DESIST√äNCIA
 					break;
 				}
 				else if (decisao==4 && (furia1<6 || furia2<6)){
@@ -378,7 +391,7 @@ int main()
 							printf("tente de novo");
 							scanf("%i", &decisao);
 						}
-						//aÁ„o de atacar, podendo escolher qual das duas gousmas ataca
+						//a√ß√£o de atacar, podendo escolher qual das duas gousmas ataca
 				}
 				else if (decisao==2 && furia2<6){
 					printf("usar gousmas de cima(1), com %i de furia, ou gousmas de baixo(2), com %i de furia?", furia3, furia4);
@@ -395,13 +408,13 @@ int main()
 							printf("tente de novo");
 							scanf("%i", &decisao);
 						}
-						//aÁ„o de atacar, podendo escolher qual das duas gousmas ataca
+						//a√ß√£o de atacar, podendo escolher qual das duas gousmas ataca
 				}
 				else if (decisao==3){
 					furia3=6;
 					furia4=6;
 					printf("JOGADOR2-> VENCEDOR");
-					//DESIST NCIA
+					//DESIST√äNCIA
 					break;
 				}
 				else if (decisao==4 && (furia3<6 || furia4<6)){
@@ -425,7 +438,7 @@ int main()
 			break;
 		}
 		else if (decisao == 5){
-			printf("TÕTULO DO JOGO\n");
+			printf("T√çTULO DO JOGO\n");
 	
 			printf("1: Pergunta e Resposta \n");
 			printf("2: Cobra na Caixa! \n");
@@ -434,7 +447,7 @@ int main()
 			scanf("%i", &decisao);
 		}
 		else{
-			printf("MAU USU¡RIO!\nESCREVA CERTO . . . \n");
+			printf("MAU USU√ÅRIO!\nESCREVA CERTO . . . \n");
 			scanf("%i", &decisao);
 		}
 	}
