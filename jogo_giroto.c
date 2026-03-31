@@ -234,19 +234,44 @@ int main()
         abertas[escolha] = 1;
 
         		if (escolha == botao) {
-	 	 	    if (jogadorAtual == 0)
-                printf("\n>>> VOCÊ ACHOU O BOTÃO! %s venceu!\n", jogador1);
-            	else
-                printf("\n>>> VOCÊ ACHOU O BOTÃO! %s venceu!\n", jogador2);
-            break;
-        }
+	 	 	    	if (jogadorAtual == 0){
+                		printf("\n>>> VOCÊ ACHOU O BOTÃO! %s venceu!\n", jogador1);
+					  }
+            		else{
+                		printf("\n>>> VOCÊ ACHOU O BOTÃO! %s venceu!\n", jogador2);
+					}
+					printf("Jogar novamente?\n");
+					printf("1: Sim!\n"); printf("2: Não!\n");
+					scanf("%i", &Resposta);
+					if(Resposta == 1){
+						printf("Recomeçando . . .\n");
+						break;
+					}else{
+						printf("Fechando o jogo . . .\n");
+						decisao = 5;
+						return;
+					}
+				}
 
         		if (escolha == cobra) {
-            	if (jogadorAtual == 0)
-                printf("\n>>> COBRA! %s perdeu!\n", jogador1);
-            	else
-                printf("\n>>> COBRA! %s perdeu!\n", jogador2);
-        }
+	            	if (jogadorAtual == 0){
+	                	printf("\n>>> COBRA! %s perdeu!\n", jogador1);
+					}
+	            	else{
+	                	printf("\n>>> COBRA! %s perdeu!\n", jogador2);
+					}
+	                printf("Jogar novamente?\n");
+	                printf("1: Sim!\n"); printf("2: Não!\n");
+	                scanf("%i", &Resposta);
+	                if(Resposta == 1){
+	                	printf("Recomeçando . . .\n");
+						break;
+					}else{
+						printf("Fechando o jogo . . .\n");
+						decisao = 5;
+						return;
+					}
+				}
 
         printf("Caixa vazia . . .\n");
         
