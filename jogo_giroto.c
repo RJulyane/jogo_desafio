@@ -168,6 +168,14 @@ int main()
     }
 
     	escolha1 = lerInteiro();
+    	while (escolha1<1 || escolha1>7){
+			printf("\nEscolha o nome do Jogador 1:\n");
+   		 	for (i = 0; i < NOMES; i++) {
+        		printf("%d - %s\n", i + 1, nomes[i]);
+    		}
+
+    	escolha1 = lerInteiro();
+		}
 
     	printf("\nEscolha o nome do Jogador 2:\n");
     	for (i = 0; i < NOMES; i++) {
@@ -178,22 +186,19 @@ int main()
     escolha2 = lerInteiro();
     strcpy(jogador1, nomes[escolha1 - 1]);
 	strcpy(jogador2, nomes[escolha2 - 1]);
-    while (strcmp(jogador1, jogador2)==0){ //comparar char
-		printf("\nEscolha o nome válido do Jogador 2:\n");
-		for (i = 0; i < NOMES; i++) {
-			if (i != escolha1 - 1) {
-				printf("%d - %s\n", i + 1, nomes[i]);
+    while (strcmp(jogador1, jogador2)==0 || (escolha2<1 || escolha2>7)){ //comparar char
+		printf("\nEscolha o nome válido do Jogador 2 (1 a 7):\n");
+			for (i = 0; i < NOMES; i++) {
+				if (i != escolha1 - 1) {
+					printf("%d - %s\n", i + 1, nomes[i]);
+				}
+				
 			}
-			
-		}
 		escolha2 = lerInteiro();//ler
 		strcpy(jogador2, nomes[escolha2 - 1]);//armazena
 		
 	}
 	
-
-    		
-
     	botao = rand() % CAIXAS;
 
     	do {
