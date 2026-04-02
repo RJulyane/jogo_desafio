@@ -477,7 +477,7 @@ int main()
 			scanf("%i", &decisao);
 		}
 		else{
-			printf("MAU USUÁRIO!\nESCREVA CERTO . . . \n");
+			printf("MAL USUÁRIO!\nESCREVA CERTO . . . \n");
 			scanf("%i", &decisao);
 		}
 	}
