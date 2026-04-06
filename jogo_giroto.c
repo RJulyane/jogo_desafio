@@ -11,7 +11,7 @@ int decisao, x;
 int Resposta;
 
 void menu(){
-	printf("========TÍTULO DO JOGO========\n");
+	printf("========JOGitto========\n");
 	
 	printf("-----1: Perguntas e Respostas!\n");
 	printf("-----2: Cobra na Caixa!\n");
@@ -468,7 +468,7 @@ int main()
 			break;
 		}
 		else if (decisao == 5){
-			printf("TÍTULO DO JOGO\n");
+			printf("\tJOGitto\n");
 	
 			printf("1: Pergunta e Resposta \n");
 			printf("2: Cobra na Caixa! \n");
